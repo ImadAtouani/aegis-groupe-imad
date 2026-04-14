@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "date": "2026-04-14T09:44:06.663186",
+    "module": "audit_mariadb"
+  },
+  "port_3306_accessible_localement": true,
+  "port_3306_accessible_externe": false,
+  "verifications_sql": {
+    "root_sans_mot_de_passe": {
+      "valeur": false,
+      "risque": "OK",
+      "detail": "Root a un mot de passe défini"
+    },
+    "comptes_sans_mot_de_passe": {
+      "valeur": "NULL",
+      "risque": "OK",
+      "detail": "Comptes sans mot de passe : NULL"
+    },
+    "base_test_presente": {
+      "valeur": false,
+      "risque": "OK",
+      "detail": "Base 'test' absente — bien"
+    },
+    "bind_address": {
+      "valeur": "127.0.0.1",
+      "risque": "OK",
+      "detail": "MariaDB écoute sur 127.0.0.1"
+    },
+    "comptes_wildcard_host": {
+      "valeur": "aucun",
+      "risque": "OK",
+      "detail": "Aucun compte avec hôte wildcard '%'"
+    }
+  }
+}
