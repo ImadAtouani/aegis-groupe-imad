@@ -1,0 +1,9 @@
+# Désactive l'exécution PHP dans ce répertoire
+php_flag engine off
+
+# Refuser l'exécution de scripts
+Options -ExecCGI
+AddHandler cgi-script .php .php3 .php4 .php5 .phtml .pl .py .jsp .asp .sh
+
+# Forcer le type MIME à texte brut
+ForceType text/plain
