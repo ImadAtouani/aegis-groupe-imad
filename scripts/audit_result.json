@@ -1,0 +1,420 @@
+{
+  "meta": {
+    "date": "2026-04-14T08:02:37.464902",
+    "auditor": "root",
+    "hostname": "ubuntu-server",
+    "script_version": "1.0"
+  },
+  "system": {
+    "os": "Linux",
+    "release": "6.8.0-107-generic",
+    "version": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.8.0-107-generic",
+    "uptime": "up 28 minutes",
+    "last_update": "2026-04-13",
+    "pending_updates": "0"
+  },
+  "network": {
+    "interfaces": "lo               UNKNOWN        127.0.0.1/8 ::1/128 \nenp0s3           UP             10.74.2.69/22 metric 100 fe80::a00:27ff:feb2:c4a7/64",
+    "routes": "default via 10.74.0.1 dev enp0s3 proto dhcp src 10.74.2.69 metric 100 \n8.8.8.8 via 10.74.0.1 dev enp0s3 proto dhcp src 10.74.2.69 metric 100 \n10.74.0.0/22 dev enp0s3 proto kernel scope link src 10.74.2.69 metric 100 \n10.74.0.1 dev enp0s3 proto dhcp scope link src 10.74.2.69 metric 100",
+    "listening_ports": "Netid State  Recv-Q Send-Q     Local Address:Port Peer Address:PortProcess                                                                                                                                                             \nudp   UNCONN 0      0             127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=1546,fd=16))                                                                                                                         \nudp   UNCONN 0      0          127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=1546,fd=14))                                                                                                                         \nudp   UNCONN 0      0      10.74.2.69%enp0s3:68        0.0.0.0:*    users:((\"systemd-network\",pid=1559,fd=22))                                                                                                                         \ntcp   LISTEN 0      4096          127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=1546,fd=17))                                                                                                                         \ntcp   LISTEN 0      80             127.0.0.1:3306      0.0.0.0:*    users:((\"mariadbd\",pid=944,fd=24))                                                                                                                                 \ntcp   LISTEN 0      128              0.0.0.0:2222      0.0.0.0:*    users:((\"sshd\",pid=993,fd=3))                                                                                                                                      \ntcp   LISTEN 0      4096       127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=1546,fd=15))                                                                                                                         \ntcp   LISTEN 0      511                    *:80              *:*    users:((\"apache2\",pid=1031,fd=4),(\"apache2\",pid=1030,fd=4),(\"apache2\",pid=1029,fd=4),(\"apache2\",pid=1028,fd=4),(\"apache2\",pid=1026,fd=4),(\"apache2\",pid=1006,fd=4))\ntcp   LISTEN 0      128                 [::]:2222         [::]:*    users:((\"sshd\",pid=993,fd=4))"
+  },
+  "ports": [
+    {
+      "port": 21,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 22,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 23,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 25,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 80,
+      "open": true,
+      "risk": "ÉLEVÉ",
+      "note": "HTTP — pas de HTTPS"
+    },
+    {
+      "port": 443,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 445,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 2222,
+      "open": true,
+      "risk": "FAIBLE",
+      "note": "SSH port custom — OK si durci"
+    },
+    {
+      "port": 3306,
+      "open": true,
+      "risk": "CRITIQUE",
+      "note": "MariaDB/MySQL — NE PAS exposer sur WAN"
+    },
+    {
+      "port": 3389,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 5001,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 8080,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    },
+    {
+      "port": 8443,
+      "open": false,
+      "risk": "N/A",
+      "note": ""
+    }
+  ],
+  "users": [
+    {
+      "username": "root",
+      "uid": 0,
+      "shell": "/bin/bash",
+      "active": true,
+      "risk": ""
+    },
+    {
+      "username": "daemon",
+      "uid": 1,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "bin",
+      "uid": 2,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "sys",
+      "uid": 3,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "sync",
+      "uid": 4,
+      "shell": "/bin/sync",
+      "active": true,
+      "risk": ""
+    },
+    {
+      "username": "games",
+      "uid": 5,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "man",
+      "uid": 6,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "lp",
+      "uid": 7,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "mail",
+      "uid": 8,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "news",
+      "uid": 9,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "uucp",
+      "uid": 10,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "proxy",
+      "uid": 13,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "www-data",
+      "uid": 33,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "backup",
+      "uid": 34,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "list",
+      "uid": 38,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "irc",
+      "uid": 39,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "_apt",
+      "uid": 42,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "nobody",
+      "uid": 65534,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "systemd-network",
+      "uid": 998,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "systemd-timesync",
+      "uid": 997,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "dhcpcd",
+      "uid": 100,
+      "shell": "/bin/false",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "messagebus",
+      "uid": 101,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "systemd-resolve",
+      "uid": 992,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "pollinate",
+      "uid": 102,
+      "shell": "/bin/false",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "polkitd",
+      "uid": 991,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "syslog",
+      "uid": 103,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "uuidd",
+      "uid": 104,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "tcpdump",
+      "uid": 105,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "tss",
+      "uid": 106,
+      "shell": "/bin/false",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "landscape",
+      "uid": 107,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "fwupd-refresh",
+      "uid": 989,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "usbmux",
+      "uid": 108,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "groupe-imad",
+      "uid": 1000,
+      "shell": "/bin/bash",
+      "active": true,
+      "risk": "VÉRIFIER"
+    },
+    {
+      "username": "sshd",
+      "uid": 109,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "adminaegis",
+      "uid": 1001,
+      "shell": "/bin/bash",
+      "active": true,
+      "risk": "VÉRIFIER"
+    },
+    {
+      "username": "_galera",
+      "uid": 110,
+      "shell": "/usr/sbin/nologin",
+      "active": false,
+      "risk": ""
+    },
+    {
+      "username": "mysql",
+      "uid": 111,
+      "shell": "/bin/false",
+      "active": false,
+      "risk": ""
+    }
+  ],
+  "services": [
+    "apache2.service",
+    "cron.service",
+    "dbus.service",
+    "fail2ban.service",
+    "getty@tty1.service",
+    "mariadb.service",
+    "ModemManager.service",
+    "multipathd.service",
+    "polkit.service",
+    "rsyslog.service",
+    "ssh.service",
+    "systemd-journald.service",
+    "systemd-logind.service",
+    "systemd-networkd.service",
+    "systemd-resolved.service",
+    "systemd-timesyncd.service",
+    "systemd-udevd.service",
+    "udisks2.service",
+    "unattended-upgrades.service",
+    "user@1000.service"
+  ],
+  "ssh_config": {
+    "PermitRootLogin": {
+      "value": "no",
+      "expected": "no",
+      "ok": true,
+      "severity": "OK"
+    },
+    "PasswordAuthentication": {
+      "value": "no",
+      "expected": "no",
+      "ok": true,
+      "severity": "OK"
+    },
+    "Port": {
+      "value": "2222",
+      "expected": "2222",
+      "ok": true,
+      "severity": "OK"
+    },
+    "MaxAuthTries": {
+      "value": "3",
+      "expected": "3",
+      "ok": true,
+      "severity": "OK"
+    },
+    "X11Forwarding": {
+      "value": "no",
+      "expected": "no",
+      "ok": true,
+      "severity": "OK"
+    }
+  },
+  "ufw_status": "Status: active\nLogging: on (low)\nDefault: deny (incoming), allow (outgoing), disabled (routed)\nNew profiles: skip\n\nTo                         Action      From\n--                         ------      ----\n2222/tcp                   ALLOW IN    Anywhere                  \n80/tcp                     ALLOW IN    Anywhere                   # HTTP\n443/tcp                    ALLOW IN    Anywhere                   # HTTPS\n2222/tcp (v6)              ALLOW IN    Anywhere (v6)             \n80/tcp (v6)                ALLOW IN    Anywhere (v6)              # HTTP\n443/tcp (v6)               ALLOW IN    Anywhere (v6)              # HTTPS",
+  "fail2ban_status": "Status\n|- Number of jail:\t1\n`- Jail list:\tsshd",
+  "vulnerabilities": []
+}

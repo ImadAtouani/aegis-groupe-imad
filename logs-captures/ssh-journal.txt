@@ -1,0 +1,51 @@
+avril 14 01:37:33 ubuntu-server systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+avril 14 01:37:33 ubuntu-server systemd[1]: ssh.service: Deactivated successfully.
+avril 14 01:37:33 ubuntu-server systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+avril 14 01:37:33 ubuntu-server systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+avril 14 01:37:33 ubuntu-server sshd[2392]: Server listening on 0.0.0.0 port 2222.
+avril 14 01:37:33 ubuntu-server systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+avril 14 01:37:33 ubuntu-server sshd[2392]: Server listening on :: port 2222.
+avril 14 01:39:15 ubuntu-server sshd[2918]: Accepted password for groupe-imad from 192.168.1.84 port 49175 ssh2
+avril 14 01:39:15 ubuntu-server sshd[2918]: pam_unix(sshd:session): session opened for user groupe-imad(uid=1000) by groupe-imad(uid=0)
+avril 14 01:48:37 ubuntu-server systemd[1]: Reloading ssh.service - OpenBSD Secure Shell server...
+avril 14 01:48:37 ubuntu-server sshd[2392]: Received SIGHUP; restarting.
+avril 14 01:48:37 ubuntu-server sshd[2392]: Server listening on 0.0.0.0 port 2222.
+avril 14 01:48:37 ubuntu-server sshd[2392]: Server listening on :: port 2222.
+avril 14 01:48:37 ubuntu-server systemd[1]: Reloaded ssh.service - OpenBSD Secure Shell server.
+avril 14 01:49:34 ubuntu-server systemd[1]: Reloading ssh.service - OpenBSD Secure Shell server...
+avril 14 01:49:34 ubuntu-server sshd[2392]: Received SIGHUP; restarting.
+avril 14 01:49:34 ubuntu-server sshd[2392]: Server listening on 0.0.0.0 port 2222.
+avril 14 01:49:34 ubuntu-server sshd[2392]: Server listening on :: port 2222.
+avril 14 01:49:34 ubuntu-server systemd[1]: Reloaded ssh.service - OpenBSD Secure Shell server.
+avril 14 01:50:14 ubuntu-server systemd[1]: Reloading ssh.service - OpenBSD Secure Shell server...
+avril 14 01:50:14 ubuntu-server sshd[2392]: Received SIGHUP; restarting.
+avril 14 01:50:14 ubuntu-server systemd[1]: Reloaded ssh.service - OpenBSD Secure Shell server.
+avril 14 01:50:14 ubuntu-server sshd[2392]: Server listening on 0.0.0.0 port 2222.
+avril 14 01:50:14 ubuntu-server sshd[2392]: Server listening on :: port 2222.
+avril 14 02:02:47 ubuntu-server sshd[3171]: error: Received disconnect from 192.168.1.84 port 59088:14: No supported authentication methods available [preauth]
+avril 14 02:02:47 ubuntu-server sshd[3171]: Disconnected from authenticating user groupe-imad 192.168.1.84 port 59088 [preauth]
+avril 14 02:05:02 ubuntu-server systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+avril 14 02:05:02 ubuntu-server systemd[1]: ssh.service: Deactivated successfully.
+avril 14 02:05:02 ubuntu-server systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+avril 14 02:05:02 ubuntu-server systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+avril 14 02:05:02 ubuntu-server sshd[3201]: Server listening on 0.0.0.0 port 2222.
+avril 14 02:05:02 ubuntu-server sshd[3201]: Server listening on :: port 2222.
+avril 14 02:05:02 ubuntu-server systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+avril 14 02:05:31 ubuntu-server sshd[3204]: error: Received disconnect from 192.168.1.84 port 60968:14: No supported authentication methods available [preauth]
+avril 14 02:05:31 ubuntu-server sshd[3204]: Disconnected from authenticating user groupe-imad 192.168.1.84 port 60968 [preauth]
+avril 14 02:06:11 ubuntu-server systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+avril 14 02:06:11 ubuntu-server sshd[3201]: Received signal 15; terminating.
+avril 14 02:06:11 ubuntu-server systemd[1]: ssh.service: Deactivated successfully.
+avril 14 02:06:11 ubuntu-server systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+avril 14 02:06:11 ubuntu-server systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+avril 14 02:06:11 ubuntu-server sshd[3217]: Server listening on 0.0.0.0 port 2222.
+avril 14 02:06:11 ubuntu-server systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+avril 14 02:06:11 ubuntu-server sshd[3217]: Server listening on :: port 2222.
+avril 14 02:06:42 ubuntu-server sshd[3220]: Accepted password for groupe-imad from 192.168.1.84 port 56161 ssh2
+avril 14 02:06:42 ubuntu-server sshd[3220]: pam_unix(sshd:session): session opened for user groupe-imad(uid=1000) by groupe-imad(uid=0)
+-- Boot dd60e66fe72f4339b6cf04cde0c1ed60 --
+avril 14 07:34:08 ubuntu-server systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+avril 14 07:34:08 ubuntu-server sshd[993]: Server listening on 0.0.0.0 port 2222.
+avril 14 07:34:08 ubuntu-server sshd[993]: Server listening on :: port 2222.
+avril 14 07:34:08 ubuntu-server systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+avril 14 08:02:37 ubuntu-server sshd[1643]: Connection closed by 127.0.0.1 port 52164
