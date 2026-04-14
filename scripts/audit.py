@@ -14,10 +14,36 @@ import datetime
 import platform
 
 # ─────────────────────────────────────────
+# DÉTECTION AUTOMATIQUE DE L'IP DE LA VM
+# ─────────────────────────────────────────
+def get_vm_ip():
+    """
+    Récupère l'IP principale de la VM (interface réseau, pas 127.0.0.1).
+    Méthode : ouvre un socket UDP vers 8.8.8.8 sans envoyer de données
+    → le système choisit automatiquement l'interface de sortie.
+    """
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception:
+        # Fallback : parcourir les interfaces réseau
+        try:
+            hostname = socket.gethostname()
+            ip = socket.gethostbyname(hostname)
+            if not ip.startswith("127."):
+                return ip
+        except Exception:
+            pass
+        return "127.0.0.1"
+
+# ─────────────────────────────────────────
 # CONFIGURATION
 # ─────────────────────────────────────────
 PORTS_TO_CHECK = [21, 22, 23, 25, 80, 443, 445, 2222, 3306, 3389, 5001, 8080, 8443]
-SCAN_TARGET = "127.0.0.1"
+SCAN_TARGET = get_vm_ip()          # IP réelle de la VM, pas 127.0.0.1
 OUTPUT_JSON = "audit_result.json"
 OUTPUT_CSV  = "audit_result.csv"
 
@@ -58,7 +84,8 @@ def collect_meta():
         "date": datetime.datetime.now().isoformat(),
         "auditor": os.getenv("USER", "inconnu"),
         "hostname": socket.gethostname(),
-        "script_version": "1.0"
+        "ip_cible": SCAN_TARGET,
+        "script_version": "1.1"
     }
 
 # ─────────────────────────────────────────
@@ -239,6 +266,7 @@ def print_summary():
     print("  RÉSUMÉ DE L'AUDIT")
     print("="*50)
     open_ports = [p for p in results["ports"] if p["open"]]
+    print(f"  IP auditée        : {SCAN_TARGET}")
     print(f"  Ports ouverts     : {len(open_ports)}/{len(PORTS_TO_CHECK)}")
     print(f"  Vulnérabilités    : {len(results['vulnerabilities'])}")
     critiques = [v for v in results["vulnerabilities"] if v["severity"] == "CRITIQUE"]

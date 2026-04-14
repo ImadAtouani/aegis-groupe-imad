@@ -1,23 +1,24 @@
 {
   "meta": {
-    "date": "2026-04-14T08:02:37.464902",
+    "date": "2026-04-14T10:58:26.638643",
     "auditor": "root",
     "hostname": "ubuntu-server",
-    "script_version": "1.0"
+    "ip_cible": "10.74.2.69",
+    "script_version": "1.1"
   },
   "system": {
     "os": "Linux",
     "release": "6.8.0-107-generic",
     "version": "Ubuntu 24.04.4 LTS",
     "kernel": "6.8.0-107-generic",
-    "uptime": "up 28 minutes",
-    "last_update": "2026-04-13",
+    "uptime": "up 3 hours, 24 minutes",
+    "last_update": "2026-04-14",
     "pending_updates": "0"
   },
   "network": {
     "interfaces": "lo               UNKNOWN        127.0.0.1/8 ::1/128 \nenp0s3           UP             10.74.2.69/22 metric 100 fe80::a00:27ff:feb2:c4a7/64",
     "routes": "default via 10.74.0.1 dev enp0s3 proto dhcp src 10.74.2.69 metric 100 \n8.8.8.8 via 10.74.0.1 dev enp0s3 proto dhcp src 10.74.2.69 metric 100 \n10.74.0.0/22 dev enp0s3 proto kernel scope link src 10.74.2.69 metric 100 \n10.74.0.1 dev enp0s3 proto dhcp scope link src 10.74.2.69 metric 100",
-    "listening_ports": "Netid State  Recv-Q Send-Q     Local Address:Port Peer Address:PortProcess                                                                                                                                                             \nudp   UNCONN 0      0             127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=1546,fd=16))                                                                                                                         \nudp   UNCONN 0      0          127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=1546,fd=14))                                                                                                                         \nudp   UNCONN 0      0      10.74.2.69%enp0s3:68        0.0.0.0:*    users:((\"systemd-network\",pid=1559,fd=22))                                                                                                                         \ntcp   LISTEN 0      4096          127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=1546,fd=17))                                                                                                                         \ntcp   LISTEN 0      80             127.0.0.1:3306      0.0.0.0:*    users:((\"mariadbd\",pid=944,fd=24))                                                                                                                                 \ntcp   LISTEN 0      128              0.0.0.0:2222      0.0.0.0:*    users:((\"sshd\",pid=993,fd=3))                                                                                                                                      \ntcp   LISTEN 0      4096       127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=1546,fd=15))                                                                                                                         \ntcp   LISTEN 0      511                    *:80              *:*    users:((\"apache2\",pid=1031,fd=4),(\"apache2\",pid=1030,fd=4),(\"apache2\",pid=1029,fd=4),(\"apache2\",pid=1028,fd=4),(\"apache2\",pid=1026,fd=4),(\"apache2\",pid=1006,fd=4))\ntcp   LISTEN 0      128                 [::]:2222         [::]:*    users:((\"sshd\",pid=993,fd=4))"
+    "listening_ports": "Netid State  Recv-Q Send-Q     Local Address:Port Peer Address:PortProcess                                                                                                                                                             \nudp   UNCONN 0      0             127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=8701,fd=16))                                                                                                                         \nudp   UNCONN 0      0          127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=8701,fd=14))                                                                                                                         \nudp   UNCONN 0      0      10.74.2.69%enp0s3:68        0.0.0.0:*    users:((\"systemd-network\",pid=1559,fd=22))                                                                                                                         \ntcp   LISTEN 0      4096          127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=8701,fd=17))                                                                                                                         \ntcp   LISTEN 0      80             127.0.0.1:3306      0.0.0.0:*    users:((\"mariadbd\",pid=8060,fd=23))                                                                                                                                \ntcp   LISTEN 0      128              0.0.0.0:2222      0.0.0.0:*    users:((\"sshd\",pid=993,fd=3))                                                                                                                                      \ntcp   LISTEN 0      4096       127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=8701,fd=15))                                                                                                                         \ntcp   LISTEN 0      511                    *:80              *:*    users:((\"apache2\",pid=9770,fd=4),(\"apache2\",pid=9769,fd=4),(\"apache2\",pid=9768,fd=4),(\"apache2\",pid=9767,fd=4),(\"apache2\",pid=9766,fd=4),(\"apache2\",pid=9697,fd=4))\ntcp   LISTEN 0      128                 [::]:2222         [::]:*    users:((\"sshd\",pid=993,fd=4))"
   },
   "ports": [
     {
@@ -70,9 +71,9 @@
     },
     {
       "port": 3306,
-      "open": true,
-      "risk": "CRITIQUE",
-      "note": "MariaDB/MySQL — NE PAS exposer sur WAN"
+      "open": false,
+      "risk": "N/A",
+      "note": ""
     },
     {
       "port": 3389,
@@ -380,6 +381,7 @@
     "systemd-udevd.service",
     "udisks2.service",
     "unattended-upgrades.service",
+    "upower.service",
     "user@1000.service"
   ],
   "ssh_config": {
@@ -414,7 +416,7 @@
       "severity": "OK"
     }
   },
-  "ufw_status": "Status: active\nLogging: on (low)\nDefault: deny (incoming), allow (outgoing), disabled (routed)\nNew profiles: skip\n\nTo                         Action      From\n--                         ------      ----\n2222/tcp                   ALLOW IN    Anywhere                  \n80/tcp                     ALLOW IN    Anywhere                   # HTTP\n443/tcp                    ALLOW IN    Anywhere                   # HTTPS\n2222/tcp (v6)              ALLOW IN    Anywhere (v6)             \n80/tcp (v6)                ALLOW IN    Anywhere (v6)              # HTTP\n443/tcp (v6)               ALLOW IN    Anywhere (v6)              # HTTPS",
+  "ufw_status": "Status: active\nLogging: on (low)\nDefault: deny (incoming), allow (outgoing), disabled (routed)\nNew profiles: skip\n\nTo                         Action      From\n--                         ------      ----\n2222/tcp                   ALLOW IN    Anywhere                  \n80/tcp                     ALLOW IN    Anywhere                   # HTTP Apache\n443/tcp                    ALLOW IN    Anywhere                   # HTTPS\n2222/tcp (v6)              ALLOW IN    Anywhere (v6)             \n80/tcp (v6)                ALLOW IN    Anywhere (v6)              # HTTP Apache\n443/tcp (v6)               ALLOW IN    Anywhere (v6)              # HTTPS",
   "fail2ban_status": "Status\n|- Number of jail:\t1\n`- Jail list:\tsshd",
   "vulnerabilities": []
 }

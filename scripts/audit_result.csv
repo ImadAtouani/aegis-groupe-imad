@@ -7,7 +7,7 @@ Port,Ouvert,Risque,Note
 443,False,N/A,
 445,False,N/A,
 2222,True,FAIBLE,SSH port custom — OK si durci
-3306,True,CRITIQUE,MariaDB/MySQL — NE PAS exposer sur WAN
+3306,False,N/A,
 3389,False,N/A,
 5001,False,N/A,
 8080,False,N/A,
