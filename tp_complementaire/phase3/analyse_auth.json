@@ -1,0 +1,1632 @@
+{
+  "meta": {
+    "fichier": "/var/log/auth.log",
+    "periode_heures": 48,
+    "analyse_le": "2026-04-14T10:37:34.133217",
+    "lignes_parsees": 1251
+  },
+  "echecs_par_ip": {
+    "10.74.2.68": {
+      "count": 1,
+      "details": [
+        {
+          "timestamp": "2026-04-14T10:25:16.191301",
+          "user": "utilisateur_inexistant"
+        }
+      ]
+    }
+  },
+  "ip_suspectes_plus_5_tentatives": {},
+  "connexions_reussies": {
+    "groupe-imad": [
+      {
+        "timestamp": "2026-04-13T12:55:10.785378",
+        "ip": "10.74.2.22"
+      },
+      {
+        "timestamp": "2026-04-13T12:59:33.841599",
+        "ip": "10.74.2.22"
+      },
+      {
+        "timestamp": "2026-04-14T01:39:15.726605",
+        "ip": "192.168.1.84"
+      },
+      {
+        "timestamp": "2026-04-14T02:06:42.709378",
+        "ip": "192.168.1.84"
+      },
+      {
+        "timestamp": "2026-04-14T08:26:04.483878",
+        "ip": "10.74.2.68"
+      },
+      {
+        "timestamp": "2026-04-14T09:36:08.567628",
+        "ip": "10.74.2.68"
+      }
+    ]
+  },
+  "commandes_sudo": [
+    {
+      "timestamp": "2026-04-13T11:40:12.646954",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt update"
+    },
+    {
+      "timestamp": "2026-04-13T11:40:26.594803",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt upgrade -y"
+    },
+    {
+      "timestamp": "2026-04-13T11:49:09.658837",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt update"
+    },
+    {
+      "timestamp": "2026-04-13T11:49:13.224585",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt upgrade -y"
+    },
+    {
+      "timestamp": "2026-04-13T11:51:57.046480",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install -y openssh-server ufw fail2ban nmap net-tools git python3 python3-pip curl vim htop tree jq"
+    },
+    {
+      "timestamp": "2026-04-13T11:55:11.185659",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-13T11:55:16.517359",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl enable sshù"
+    },
+    {
+      "timestamp": "2026-04-13T11:55:19.612013",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-13T11:55:24.794484",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl enable ssh"
+    },
+    {
+      "timestamp": "2026-04-13T11:55:34.245232",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-13T11:57:28.588958",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nmap -sS -sV 10.74.2.40"
+    },
+    {
+      "timestamp": "2026-04-13T11:58:04.972359",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install apache2"
+    },
+    {
+      "timestamp": "2026-04-13T11:58:26.038826",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nmap -sS -sV 10.74.2.40"
+    },
+    {
+      "timestamp": "2026-04-13T13:19:57.827690",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-13T13:20:09.335281",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-13T13:20:19.318628",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cat /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-13T13:21:25.526996",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/adduser adminaegis"
+    },
+    {
+      "timestamp": "2026-04-13T13:21:52.182863",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/usermod -aG sudo adminaegis"
+    },
+    {
+      "timestamp": "2026-04-13T13:27:44.271935",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/su - adminaegis"
+    },
+    {
+      "timestamp": "2026-04-13T13:51:47.316200",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak"
+    },
+    {
+      "timestamp": "2026-04-13T13:52:27.968625",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/vim /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-13T14:03:16.950405",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/rm /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-13T14:04:13.980391",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp /etc/ssh/sshd_config.bak /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-13T14:04:43.302468",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-13T14:08:33.904665",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -t"
+    },
+    {
+      "timestamp": "2026-04-13T14:08:45.091220",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh"
+    },
+    {
+      "timestamp": "2026-04-13T14:08:54.979571",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-13T14:09:35.875046",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl reload ssh"
+    },
+    {
+      "timestamp": "2026-04-13T14:09:39.522508",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-13T14:10:20.887388",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -t"
+    },
+    {
+      "timestamp": "2026-04-13T14:10:26.513436",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl reload ssh"
+    },
+    {
+      "timestamp": "2026-04-13T14:10:34.072337",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-13T14:14:05.704838",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -T"
+    },
+    {
+      "timestamp": "2026-04-13T14:17:01.517597",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install ufw"
+    },
+    {
+      "timestamp": "2026-04-13T14:38:17.342456",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install mariadb-server"
+    },
+    {
+      "timestamp": "2026-04-13T14:42:11.672423",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install php libapache2-mod-php php-mysql"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:05.661022",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw status verbose"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:24.956173",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw default deny incoming"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:36.066430",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw default allow outgoing"
+    },
+    {
+      "timestamp": "2026-04-13T20:31:02.076709",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw allow 2222/tcp comment 'SSH custom port'"
+    },
+    {
+      "timestamp": "2026-04-13T20:31:28.054703",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw allow 80/tcp comment HTTP"
+    },
+    {
+      "timestamp": "2026-04-13T20:31:45.826269",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw allow 443/tcp comment HTTPS"
+    },
+    {
+      "timestamp": "2026-04-13T20:31:56.135527",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw enable"
+    },
+    {
+      "timestamp": "2026-04-13T20:32:06.727176",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw status numbered"
+    },
+    {
+      "timestamp": "2026-04-13T20:34:05.881231",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status fail2ban"
+    },
+    {
+      "timestamp": "2026-04-13T20:34:46.191712",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local"
+    },
+    {
+      "timestamp": "2026-04-13T20:36:04.780554",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/fail2ban/jail.local"
+    },
+    {
+      "timestamp": "2026-04-13T20:41:25.602222",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart fail2ban"
+    },
+    {
+      "timestamp": "2026-04-13T20:41:33.590079",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/fail2ban-client status"
+    },
+    {
+      "timestamp": "2026-04-13T20:41:42.412283",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/fail2ban-client status sshd"
+    },
+    {
+      "timestamp": "2026-04-13T20:42:05.183087",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/fail2ban-client status sshd"
+    },
+    {
+      "timestamp": "2026-04-13T23:42:17.524865",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/usermod -L deploy"
+    },
+    {
+      "timestamp": "2026-04-13T23:43:38.337329",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/usermod -s /usr/sbin/nologin deploy"
+    },
+    {
+      "timestamp": "2026-04-13T23:44:25.592321",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cat /etc/sudoers"
+    },
+    {
+      "timestamp": "2026-04-13T23:44:54.103258",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/usermod -L deploy"
+    },
+    {
+      "timestamp": "2026-04-13T23:44:57.923812",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/usermod -s /usr/sbin/nologin deploy"
+    },
+    {
+      "timestamp": "2026-04-13T23:46:07.365157",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cat /etc/sudoers"
+    },
+    {
+      "timestamp": "2026-04-13T23:47:26.740592",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ls /etc/sudoers.d/"
+    },
+    {
+      "timestamp": "2026-04-13T23:47:58.147304",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/find / -perm -4000 -type f"
+    },
+    {
+      "timestamp": "2026-04-13T23:48:32.807706",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/find /etc -writable -type f"
+    },
+    {
+      "timestamp": "2026-04-13T23:48:49.274305",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ls /etc/sudoers.d/"
+    },
+    {
+      "timestamp": "2026-04-13T23:48:55.757009",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/find / -perm -4000 -type f"
+    },
+    {
+      "timestamp": "2026-04-13T23:49:47.480511",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/find /etc -writable -type f"
+    },
+    {
+      "timestamp": "2026-04-14T00:09:06.968906",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/chmod 600 /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T00:09:16.290789",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/chmod 644 /etc/passwd"
+    },
+    {
+      "timestamp": "2026-04-14T00:09:24.031352",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/chmod 640 /etc/shadow"
+    },
+    {
+      "timestamp": "2026-04-14T00:09:39.961501",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/chmod 644 /etc/group"
+    },
+    {
+      "timestamp": "2026-04-14T00:10:02.144485",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ls -la /etc/cron.d/"
+    },
+    {
+      "timestamp": "2026-04-14T00:10:20.778669",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cat /etc/crontab"
+    },
+    {
+      "timestamp": "2026-04-14T00:11:24.649206",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/crontab -l"
+    },
+    {
+      "timestamp": "2026-04-14T00:11:41.520428",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/crontab -u www-data -l"
+    },
+    {
+      "timestamp": "2026-04-14T00:13:18.306845",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl list-units --type=service --state=running"
+    },
+    {
+      "timestamp": "2026-04-14T00:13:48.973632",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw status verbose"
+    },
+    {
+      "timestamp": "2026-04-14T00:14:41.020813",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp /etc/fail2ban/jail.local /home/groupe-imad/aegis-groupe-imad/configs/fail2ban-jail.local"
+    },
+    {
+      "timestamp": "2026-04-14T00:17:52.868740",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -100 /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T00:18:23.558412",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -10 /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T00:18:45.455618",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep 'Failed password' /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T00:19:28.493620",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -10 /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T00:19:30.601798",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep 'Failed password' /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T00:19:50.789662",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep 'Invalid user' /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T00:20:07.622172",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep Accepted /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T00:20:57.101734",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/journalctl -n 100 --no-pager"
+    },
+    {
+      "timestamp": "2026-04-14T00:21:12.413989",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/journalctl -n 10 --no-pager"
+    },
+    {
+      "timestamp": "2026-04-14T00:21:29.869319",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tulnp"
+    },
+    {
+      "timestamp": "2026-04-14T00:21:37.915490",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/netstat -tulnp"
+    },
+    {
+      "timestamp": "2026-04-14T00:27:13.161422",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:30:58.483960",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/rm /home/groupe-imad/aegis-groupe-imad/scripts/audit.py"
+    },
+    {
+      "timestamp": "2026-04-14T00:37:35.194105",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw status verbose"
+    },
+    {
+      "timestamp": "2026-04-14T00:38:54.287303",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/fail2ban-client status sshd"
+    },
+    {
+      "timestamp": "2026-04-14T00:39:12.309934",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:39:17.773937",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl reload ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:41:08.774687",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:41:17.494049",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-14T00:41:47.656484",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl start ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:41:50.884217",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl enable ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:42:01.596110",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw status"
+    },
+    {
+      "timestamp": "2026-04-14T00:42:14.501988",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw allow 2222/tcp"
+    },
+    {
+      "timestamp": "2026-04-14T00:42:18.263096",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw reload"
+    },
+    {
+      "timestamp": "2026-04-14T00:43:38.282502",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -t"
+    },
+    {
+      "timestamp": "2026-04-14T00:43:47.523726",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:43:55.334499",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:53:54.281474",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:54:09.338282",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-14T00:54:49.135500",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp /etc/ssh/sshd_config.bak /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T00:54:54.964373",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:56:43.543029",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:58:39.888126",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T00:59:43.442703",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T01:00:12.508665",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl reload ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:00:16.787347",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:00:51.858031",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw verbose"
+    },
+    {
+      "timestamp": "2026-04-14T01:01:09.287924",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw enable ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:02:00.809350",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw disbale"
+    },
+    {
+      "timestamp": "2026-04-14T01:02:19.804690",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw disble"
+    },
+    {
+      "timestamp": "2026-04-14T01:02:23.140317",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw disable"
+    },
+    {
+      "timestamp": "2026-04-14T01:03:01.261051",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw enable"
+    },
+    {
+      "timestamp": "2026-04-14T01:03:50.733196",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw fail2ban-client status sshd"
+    },
+    {
+      "timestamp": "2026-04-14T01:04:01.369473",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/fail2ban-client status sshd"
+    },
+    {
+      "timestamp": "2026-04-14T01:05:25.054167",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T01:08:57.169131",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl daemon-reload"
+    },
+    {
+      "timestamp": "2026-04-14T01:09:06.775098",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh.socket"
+    },
+    {
+      "timestamp": "2026-04-14T01:10:01.843913",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:12:38.361266",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T01:17:02.605189",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl daemon-reload"
+    },
+    {
+      "timestamp": "2026-04-14T01:17:05.599244",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh.socket"
+    },
+    {
+      "timestamp": "2026-04-14T01:17:08.237408",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:17:16.361426",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:23:06.070379",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cat /home/groupe-imad/.ssh/authorized_keys"
+    },
+    {
+      "timestamp": "2026-04-14T01:26:46.554751",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T01:27:20.119354",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl daemon-reload"
+    },
+    {
+      "timestamp": "2026-04-14T01:27:25.779727",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:31:02.797641",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -T"
+    },
+    {
+      "timestamp": "2026-04-14T01:32:28.768746",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl disable ssh.socket"
+    },
+    {
+      "timestamp": "2026-04-14T01:32:36.255549",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl stop ssh.socket"
+    },
+    {
+      "timestamp": "2026-04-14T01:32:49.343022",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl unmask ssh.service"
+    },
+    {
+      "timestamp": "2026-04-14T01:32:57.943659",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl enable ssh.service"
+    },
+    {
+      "timestamp": "2026-04-14T01:33:08.140700",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh.service"
+    },
+    {
+      "timestamp": "2026-04-14T01:33:16.971663",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -T"
+    },
+    {
+      "timestamp": "2026-04-14T01:34:18.136811",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T01:37:33.017824",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh.service"
+    },
+    {
+      "timestamp": "2026-04-14T01:37:39.379866",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -T"
+    },
+    {
+      "timestamp": "2026-04-14T01:38:29.641596",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw allow 2222/tcp"
+    },
+    {
+      "timestamp": "2026-04-14T01:38:35.364170",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw reload"
+    },
+    {
+      "timestamp": "2026-04-14T01:48:25.490916",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -y"
+    },
+    {
+      "timestamp": "2026-04-14T01:48:30.279226",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -t"
+    },
+    {
+      "timestamp": "2026-04-14T01:48:37.377504",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl reload ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:48:58.401384",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T01:49:30.236595",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -t"
+    },
+    {
+      "timestamp": "2026-04-14T01:49:34.863996",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl reload ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:49:43.186988",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-14T01:50:02.444944",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-14T01:50:12.134719",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -t"
+    },
+    {
+      "timestamp": "2026-04-14T01:50:14.762944",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl reload ssh"
+    },
+    {
+      "timestamp": "2026-04-14T01:50:17.790355",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-14T01:57:48.172286",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -10 /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T01:58:07.374402",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep 'Failed password' /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T01:58:24.549442",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep 'Invalid user' /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T01:58:41.370243",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep Accepted /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T01:59:45.719464",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/journalctl -n 10 --no-pager"
+    },
+    {
+      "timestamp": "2026-04-14T02:00:05.512526",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tulnp"
+    },
+    {
+      "timestamp": "2026-04-14T02:00:15.218408",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/netstat -tulnp"
+    },
+    {
+      "timestamp": "2026-04-14T02:04:31.680505",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T02:05:02.877475",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh"
+    },
+    {
+      "timestamp": "2026-04-14T02:05:37.554461",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T02:06:11.725334",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart ssh"
+    },
+    {
+      "timestamp": "2026-04-14T02:08:57.681865",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /home/groupe-imad/aegis-groupe-imad/scripts/audit.py"
+    },
+    {
+      "timestamp": "2026-04-14T07:40:53.662100",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -T"
+    },
+    {
+      "timestamp": "2026-04-14T08:01:02.102709",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano /etc/ssh/sshd_config"
+    },
+    {
+      "timestamp": "2026-04-14T08:02:37.440123",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit.py"
+    },
+    {
+      "timestamp": "2026-04-14T08:02:37.790895",
+      "user": "root",
+      "as_user": "root",
+      "commande": "/usr/sbin/sshd -T"
+    },
+    {
+      "timestamp": "2026-04-14T08:02:37.817503",
+      "user": "root",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw status verbose"
+    },
+    {
+      "timestamp": "2026-04-14T08:02:37.887895",
+      "user": "root",
+      "as_user": "root",
+      "commande": "/usr/bin/fail2ban-client status"
+    },
+    {
+      "timestamp": "2026-04-14T08:10:36.464159",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/journalctl -u ssh --no-pager -n 50"
+    },
+    {
+      "timestamp": "2026-04-14T08:11:09.635432",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/fail2ban-client status sshd"
+    },
+    {
+      "timestamp": "2026-04-14T08:11:29.971219",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw status verbose"
+    },
+    {
+      "timestamp": "2026-04-14T08:12:04.232774",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tulnp"
+    },
+    {
+      "timestamp": "2026-04-14T08:14:01.256091",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl list-units --type=service --state=running"
+    },
+    {
+      "timestamp": "2026-04-14T08:28:25.016854",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt update"
+    },
+    {
+      "timestamp": "2026-04-14T08:29:26.218353",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt upgrade -y"
+    },
+    {
+      "timestamp": "2026-04-14T08:34:18.961960",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status mariadb-server"
+    },
+    {
+      "timestamp": "2026-04-14T08:34:30.726309",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install -y mariadb-server"
+    },
+    {
+      "timestamp": "2026-04-14T08:34:53.310043",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/mysql_secure_installation"
+    },
+    {
+      "timestamp": "2026-04-14T08:37:26.926573",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status mariadb"
+    },
+    {
+      "timestamp": "2026-04-14T08:37:37.672996",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status mariadb"
+    },
+    {
+      "timestamp": "2026-04-14T08:39:06.022301",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/mysql -u root -p"
+    },
+    {
+      "timestamp": "2026-04-14T08:42:41.489647",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/mysql -u root -p techsud_db"
+    },
+    {
+      "timestamp": "2026-04-14T08:43:26.083006",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/sed -i 's/^bind-address.*/bind-address = 0.0.0.0/' /etc/mysql/mariadb.conf.d/50-server.cnf"
+    },
+    {
+      "timestamp": "2026-04-14T08:43:39.582225",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart mariadb"
+    },
+    {
+      "timestamp": "2026-04-14T08:45:36.947251",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/sed -i 's/^bind-address.*/bind-address = 127.0.0.1/' /etc/mysql/mariadb.conf.d/50-server.cnf"
+    },
+    {
+      "timestamp": "2026-04-14T08:45:40.388376",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart mariadb"
+    },
+    {
+      "timestamp": "2026-04-14T08:47:12.085972",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/ss -tlnp"
+    },
+    {
+      "timestamp": "2026-04-14T08:49:03.060922",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/mysql -u root -p"
+    },
+    {
+      "timestamp": "2026-04-14T09:05:45.003072",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano sql_injection_demo.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:08:06.097016",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:08:42.349807",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 sql_injection_demo.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:09:06.481700",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install mysql"
+    },
+    {
+      "timestamp": "2026-04-14T09:09:59.344218",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 sql_injection_demo.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:10:04.061723",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install -y python3-pip"
+    },
+    {
+      "timestamp": "2026-04-14T09:10:13.728301",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install -y python3-pip"
+    },
+    {
+      "timestamp": "2026-04-14T09:10:27.445959",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 sql_injection_demo.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:10:46.621269",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/apt install -y python3-mysql.connector"
+    },
+    {
+      "timestamp": "2026-04-14T09:10:59.766096",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 sql_injection_demo.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:15:30.656021",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:17:53.371604",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:21:22.162258",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/mysql -u root -p"
+    },
+    {
+      "timestamp": "2026-04-14T09:22:11.734852",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:22:29.117128",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:23:18.183143",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/mysql -u root -p"
+    },
+    {
+      "timestamp": "2026-04-14T09:25:31.063434",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:27:40.372270",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:36:33.405232",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:39:21.035667",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:39:29.929474",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:40:51.647754",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:41:06.818839",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:43:32.768773",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:44:06.639146",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 audit_mariadb.py"
+    },
+    {
+      "timestamp": "2026-04-14T09:58:31.821775",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano upload_htaccess.txt"
+    },
+    {
+      "timestamp": "2026-04-14T10:01:23.254168",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano upload_vulnerable.php"
+    },
+    {
+      "timestamp": "2026-04-14T10:01:47.124492",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano upload_securise.php"
+    },
+    {
+      "timestamp": "2026-04-14T10:02:44.630639",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano xss_demo.php"
+    },
+    {
+      "timestamp": "2026-04-14T10:03:02.795055",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status apache2"
+    },
+    {
+      "timestamp": "2026-04-14T10:03:08.664112",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status apache2"
+    },
+    {
+      "timestamp": "2026-04-14T10:03:49.354098",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tee /var/www/html/info.php"
+    },
+    {
+      "timestamp": "2026-04-14T10:04:32.490057",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl status apache2"
+    },
+    {
+      "timestamp": "2026-04-14T10:04:36.440771",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tee /var/www/html/info.php"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:08.345043",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/rm /var/www/html/info.php"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:14.169237",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw allow 80/tcp comment 'HTTP Apache'"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:19.101149",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/ufw status"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:30.437124",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp upload_vulnerable.php /var/www/html/"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:34.405979",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp upload_securise.php /var/www/html/"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:38.489823",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp xss_demo.php /var/www/html/"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:42.790707",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/mkdir -p /var/www/html/upload"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:46.225968",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/chown www-data:www-data /var/www/html/upload"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:50.498958",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/chmod 755 /var/www/html/upload"
+    },
+    {
+      "timestamp": "2026-04-14T10:09:55.940926",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp upload_htaccess.txt /var/www/html/upload/.htaccess"
+    },
+    {
+      "timestamp": "2026-04-14T10:10:01.917746",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/a2enmod headers"
+    },
+    {
+      "timestamp": "2026-04-14T10:10:07.106111",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl restart apache2"
+    },
+    {
+      "timestamp": "2026-04-14T10:10:29.010259",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/sed -i 's/^ServerTokens .*/ServerTokens Prod/' /etc/apache2/conf-available/security.conf"
+    },
+    {
+      "timestamp": "2026-04-14T10:10:53.115901",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/sed -i 's/^ServerSignature .*/ServerSignature Off/' /etc/apache2/conf-available/security.conf"
+    },
+    {
+      "timestamp": "2026-04-14T10:11:00.237162",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tee /etc/apache2/conf-available/security-headers.conf"
+    },
+    {
+      "timestamp": "2026-04-14T10:12:11.991858",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cat /etc/apache2/conf-available/security-headers.conf"
+    },
+    {
+      "timestamp": "2026-04-14T10:12:57.564615",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/a2enconf security-headers"
+    },
+    {
+      "timestamp": "2026-04-14T10:13:01.834056",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/sbin/a2enconf security"
+    },
+    {
+      "timestamp": "2026-04-14T10:13:05.423148",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/systemctl reload apache2"
+    },
+    {
+      "timestamp": "2026-04-14T10:25:44.679703",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -10 /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T10:25:51.870579",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep 'Failed password' /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T10:26:01.717434",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep Accepted /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T10:26:07.166908",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/grep sudo /var/log/auth.log"
+    },
+    {
+      "timestamp": "2026-04-14T10:26:49.175032",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -10 /var/log/syslog"
+    },
+    {
+      "timestamp": "2026-04-14T10:26:59.317602",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -10 /var/log/fail2ban.log"
+    },
+    {
+      "timestamp": "2026-04-14T10:27:10.497876",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -5 /var/log/apache2/access.log"
+    },
+    {
+      "timestamp": "2026-04-14T10:27:21.831519",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/tail -5 /var/log/apache2/error.log"
+    },
+    {
+      "timestamp": "2026-04-14T10:31:17.872055",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano analyse_auth.py"
+    },
+    {
+      "timestamp": "2026-04-14T10:34:21.792918",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano analyse_apache.py"
+    },
+    {
+      "timestamp": "2026-04-14T10:35:28.721728",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/nano audit_auto.sh"
+    },
+    {
+      "timestamp": "2026-04-14T10:36:20.922591",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp analyse_auth.py /home/groupe-imad/aegis-groupe-imad/tp_complementaire/phase3/"
+    },
+    {
+      "timestamp": "2026-04-14T10:36:30.218781",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp analyse_apahce.py /home/groupe-imad/aegis-groupe-imad/tp_complementaire/phase3/"
+    },
+    {
+      "timestamp": "2026-04-14T10:36:39.282094",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp analyse_apache.py /home/groupe-imad/aegis-groupe-imad/tp_complementaire/phase3/"
+    },
+    {
+      "timestamp": "2026-04-14T10:36:52.630400",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/cp audit_auto.sh /home/groupe-imad/aegis-groupe-imad/tp_complementaire/phase3/"
+    },
+    {
+      "timestamp": "2026-04-14T10:37:25.735094",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 analyse_auth.py --hours 24"
+    },
+    {
+      "timestamp": "2026-04-14T10:37:34.107181",
+      "user": "groupe-imad",
+      "as_user": "root",
+      "commande": "/usr/bin/python3 analyse_auth.py --hours 48"
+    }
+  ],
+  "utilisateurs_invalides": {
+    "10.74.2.68": 1
+  },
+  "resume": {
+    "total_echecs": 1,
+    "ip_uniques_echecs": 1,
+    "ip_suspectes": 0,
+    "connexions_reussies": 6,
+    "commandes_sudo": 262
+  }
+}

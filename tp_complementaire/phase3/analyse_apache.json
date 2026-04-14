@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "fichier": "/var/log/apache2/access.log",
+    "analyse_le": "2026-04-14T10:40:20.875426",
+    "total_requetes": 10
+  },
+  "codes_http": {
+    "200": 5,
+    "404": 5
+  },
+  "erreurs_4xx5xx": {
+    "count": 5,
+    "details": [
+      {
+        "timestamp": "2026-04-13T11:58:32",
+        "ip": "10.74.2.40",
+        "methode": "GET",
+        "url": "/nmaplowercheck1776081512",
+        "code": 404,
+        "ua": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)"
+      },
+      {
+        "timestamp": "2026-04-13T11:58:32",
+        "ip": "10.74.2.40",
+        "methode": "POST",
+        "url": "/sdk",
+        "code": 404,
+        "ua": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)"
+      },
+      {
+        "timestamp": "2026-04-13T11:58:32",
+        "ip": "10.74.2.40",
+        "methode": "GET",
+        "url": "/HNAP1",
+        "code": 404,
+        "ua": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)"
+      },
+      {
+        "timestamp": "2026-04-13T11:58:32",
+        "ip": "10.74.2.40",
+        "methode": "GET",
+        "url": "/evox/about",
+        "code": 404,
+        "ua": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)"
+      },
+      {
+        "timestamp": "2026-04-14T10:04:19",
+        "ip": "10.74.2.68",
+        "methode": "GET",
+        "url": "/favicon.ico",
+        "code": 404,
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 OPR/129.0.0.0"
+      }
+    ]
+  },
+  "requetes_suspectes": {
+    "count": 0,
+    "details": []
+  },
+  "top5_user_agents_rares": [
+    {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 OPR/129.0.0.0",
+      "occurrences": 2
+    },
+    {
+      "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
+      "occurrences": 4
+    }
+  ],
+  "top10_ip": [
+    {
+      "ip": "10.74.2.40",
+      "requetes": 8
+    },
+    {
+      "ip": "10.74.2.68",
+      "requetes": 2
+    }
+  ],
+  "resume": {
+    "total_requetes": 10,
+    "erreurs_4xx5xx": 5,
+    "requetes_suspectes": 0,
+    "ips_distinctes": 2
+  }
+}
